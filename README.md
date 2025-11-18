@@ -140,7 +140,8 @@ Initially, some services such as the storage-provisioner, may not yet be in a Ru
 
 # Install Kubernetes (kubectl)
 Step 1: Download kubectl
-```curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+``` bash
+curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
 
 Step 2: Make it executable & move

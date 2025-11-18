@@ -145,12 +145,16 @@ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s ht
 ```
 
 Step 2: Make it executable & move
+``` bash
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
+```
 
 Step 3: Test it
+``` bash
 kubectl version --client
 kubectl get nodes
+```
 
 
 You should see:
@@ -160,10 +164,16 @@ minikube   Ready    master   Xs    v1.xx.x
 
 🚀 4. Verify Everything
 # Docker
+``` bash
 docker ps
+```
 
 # Minikube
+``` bash
 minikube status
+```
 
 # Kubernetes
+``` bash
 kubectl get pods -A
+```

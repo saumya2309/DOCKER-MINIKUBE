@@ -137,3 +137,31 @@ Initially, some services such as the storage-provisioner, may not yet be in a Ru
 
 
 <img width="1001" height="278" alt="Screenshot 2025-11-04 151159" src="https://github.com/user-attachments/assets/4e13c42a-21fd-4064-a558-b71ca1430312" />
+
+# Install Kubernetes (kubectl)
+Step 1: Download kubectl
+curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+
+Step 2: Make it executable & move
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+
+Step 3: Test it
+kubectl version --client
+kubectl get nodes
+
+
+You should see:
+
+NAME       STATUS   ROLES    AGE   VERSION
+minikube   Ready    master   Xs    v1.xx.x
+
+🚀 4. Verify Everything
+# Docker
+docker ps
+
+# Minikube
+minikube status
+
+# Kubernetes
+kubectl get pods -A
